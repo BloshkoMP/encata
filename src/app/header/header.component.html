@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+  <mat-menu #appMenu="matMenu">
+    <button mat-menu-item routerLink="">Home</button>
+    <button mat-menu-item routerLink="login">Login</button>
+    <button mat-menu-item routerLink="registration">Registration</button>
+    <button mat-menu-item routerLink="parent">Parent</button>
+    <button mat-menu-item routerLink="table">Table</button>
+    <button mat-menu-item routerLink="parent-with-three-children">Parent(3 children)</button>
+  </mat-menu>
+  <button mat-button [matMenuTriggerFor]="appMenu">Menu</button>
+  <div class="signs">
+    <button mat-button routerLink="login">Sign In</button>
+    <button mat-button routerLink="registration">Sign Up</button>
+  </div>
+</mat-toolbar>
+<router-outlet></router-outlet>

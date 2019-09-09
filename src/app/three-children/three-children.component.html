@@ -1,0 +1,6 @@
+<div>
+  <h1>Three children component</h1>
+  <app-children-one (getName)="getComponentName($event)"></app-children-one>
+  <app-children-two (getName)="getComponentName($event)"></app-children-two>
+  <app-children-three [name]="name"></app-children-three>
+</div>
